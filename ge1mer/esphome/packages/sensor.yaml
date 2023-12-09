@@ -30,6 +30,21 @@ sensor:
                 (to_string(seconds) + "s")
               ).c_str();
 
+  - platform: pzemac
+    current:
+      name: "PZEM-004T V3 Current"
+    voltage:
+      name: "PZEM-004T V3 Voltage"
+    energy:
+      name: "PZEM-004T V3 Energy"
+    power:
+      name: "PZEM-004T V3 Power"
+    frequency:
+      name: "PZEM-004T V3 Frequency"
+    power_factor:
+      name: "PZEM-004T V3 Power Factor"
+    update_interval: 60s
+
 text_sensor:
   - platform: template
     id: uptime_human

@@ -71,6 +71,11 @@ substitutions:
   pin_call_detect: GPIO13
   pin_btn_accept: GPIO0
 
+uart:
+  rx_pin: GPIO3
+  tx_pin: GPIO1
+  baud_rate: 9600
+
 packages:
   number: !include number.yaml
   script: !include script.yaml
